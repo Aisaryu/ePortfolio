@@ -234,9 +234,79 @@ form button:hover {
   transform: scale(1.1);
 }
 
-
-
 .dark-section {
   padding: 3rem 2rem;
   margin-bottom: 3rem; 
+}
+
+/* General adjustments for small screens */
+@media (max-width: 768px) {
+  /* Navbar */
+  .nav-links {
+    display: none; 
+  }
+
+  .navbar .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Hero Section */
+  .hero h1 {
+    font-size: 2rem; 
+  }
+
+  .profile-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .hero button {
+    padding: 0.6rem 1rem; 
+  }
+
+  /* Skills Section */
+  .skills-images {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .skills-images img {
+    width: 50px;
+    height: 50px;
+  }
+
+  /* Projects Section */
+  .project-carousel {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .project-card {
+    max-width: 90%; 
+    margin-bottom: 1rem; 
+  }
+
+  /* Contact Section */
+  form input, form textarea, form button {
+    font-size: 1rem; 
+  }
+
+  /* Theme Switch */
+  .fixed-toggle {
+    top: 15px;
+    right: 10px;
+  }
+}
+
+/* Adjust for ultra-small screens (e.g., phones) */
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero button {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.8rem;
+  }
 }
