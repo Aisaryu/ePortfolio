@@ -6,6 +6,7 @@ Features:
 - **Some Animations**: Animations like hovering and fading.
 - **Showcase of my projects**: A list of some of my favorite projects with descriptions and links to GitHub repositories.
 - **Contact form**: Enables the visitors to contact me through a form connected to Formspree
+- **Mobile-friendly**
 
 Technologies Used:
 - **HTML5**: For the structure of the website.
