@@ -124,19 +124,47 @@ body {
 
 .skills-images {
   display: flex;
+  flex-wrap: wrap; 
   gap: 1.5rem; 
-  justify-content: center;
+  justify-content: center; 
 }
 
 .skills-images img {
   width: 70px; 
   height: 70px; 
-  transition: transform 0.3s;
+  transition: transform 0.3s; 
 }
 
 .skills-images img:hover {
   transform: scale(1.3); 
 }
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .skills-images {
+    flex-wrap: wrap; 
+    gap: 1rem; 
+    justify-content: center;
+  }
+
+  .skills-images img {
+    width: 50px; 
+    height: 50px;
+  }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+  .skills-images {
+    gap: 0.5rem; 
+  }
+
+  .skills-images img {
+    width: 40px; 
+    height: 40px;
+  }
+}
+
 
 .section-divider {
   width: 80%;
