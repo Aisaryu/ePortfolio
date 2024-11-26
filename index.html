@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My ePortfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#home" class="logo">My ePortfolio</a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <header id="home" class="hero">
+    <div class="hero-overlay">
+      <div class="home-content">
+        <img src="IMAGES/me.png" alt="Your Name" class="profile-image">
+        <h1>Welcome to <span>My ePortfolio</span></h1>
+        <button onclick="scrollToSection('about')">Learn More</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="dark-section">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <div class="card">
+        <h3>Background</h3>
+        <br>
+        <p>I'm a 21-year-old Computer Science student currently in my third year at the University of Science and Technology of Southern Philippines. My goal is to become an expert in Web and Game Development.</p>
+        <p>While I'm still building my skills as a coder, I try to enjoy my journey in coding :')</p>
+      </div>
+      <div class="card">
+        <h3>My Skills</h3>
+        <div class="skills-images">
+          <img src="IMAGES/Python.png" alt="Python" title="Python">
+          <img src="IMAGES/C++.png" alt="CPP" title="CPP">
+          <img src="IMAGES/JAVA.png" alt="Java" title="Java">
+          <img src="IMAGES/HTML.png" alt="HTML" title="HTML">
+          <img src="IMAGES/CSS.png" alt="CSS" title="CSS">
+          <img src="IMAGES/JS.png" alt="JavaScript" title="JavaScript">
+          <img src="IMAGES/REACT.png" alt="React" title="React">
+        </div>
+      </div>
+      <div class="card">
+        <h3>Interests</h3>
+        <br>
+        <p>Outside of coding, I'm passionate about gaming, cars, and anime.</p>
+        <p>I have a tendency to be a perfectionist with my work, though I know there's always room for improvement.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Section Divider -->
+  <hr class="section-divider">
+  
+  <!-- Projects Section -->
+  <section id="projects" class="dark-section">
+    <h2>Some of the projects I worked on</h2>
+    <div class="project-carousel">
+      <div class="project-card">
+        <img src="IMAGES/Sudoku.png" alt="Project 1" class="project-image">
+        <h3>Command-line Sudoku using CPP</h3>
+        <p>This is a basic command-line Sudoku game written in C++. It's a randomly generated sudoku puzzle that has varying difficulty levels. The game features a hint system, undo functionality, and a built-in 15-minute timer.</p>
+        <a href="https://github.com/Aisaryu/Loop-and-Function-programs" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+      </div>
+      <div class="project-card">
+        <img src="IMAGES/Basic.png" alt="Project 2" class="project-image">
+        <h3>Loop and Functions program using Python</h3>
+        <p>It's basically just a collection of Python programs demonstrating the use of functions and loops, consisting of a Fibonacci calculator, BMI calculator, square finder, basic calculator, and leap year checker.</p>
+        <a href="https://github.com/Aisaryu/Loop-and-Function-programs" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+      </div>
+      <div class="project-card">
+        <img src="IMAGES/OOP.png" alt="Project 3" class="project-image">
+        <h3>Space Invaders inspired game using Java</h3>
+        <p>This project is a classic Space Invaders game, built using Java. This was used as a Final Project for OOP along with my group members.</p>
+        <a href="https://github.com/Aisaryu/Laser-Game" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Contact Section -->
+  <footer id="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form" action="https://formspree.io/f/myzynzno" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </footer>
+</body>
+</html>
